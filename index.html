@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<body>
+   
+    <form name="form-func" method="GET">
+        <fieldset>
+    <legend>🚗 A&A Avaliações Veícular</legend> 
+<head>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+        <label for="campo-data">Data:</label>
+        <input type="date" id="campo-data" name="data"><br><br>
+
+        <label for="campo-status">Status do veículo:</label>
+        <br>
+        <input type="radio" id="campo-status" name="status" value="Aprovado">Aprovado
+        <input type="radio" id="campo-status" name="status" value="Aprovado com apontamento">Aprovado com apontamento
+        <input type="radio" id="campo-status" name="status" value="Reprovado" checked>Reprovado
+        <br><br>
+   
+
+        <label for="campo-texto">Cliente</label>
+        <br>
+        <label for="campo-texto"></label>
+        <textarea id="campo-texto" name="texto"></textarea><br>
+        <br>
+
+        <label for="campo-tipo">Tipo de projeto:</label>
+        <br>
+        <input type="radio" id="campo-tipo" name="tipo" value="Venda">Venda
+        <input type="radio" id="campo-tipo" name="tipo" value="Compra">Compra
+        <input type="radio" id="campo-tipo" name="tipo" value="Troca">Troca<br><br>
+        
+
+        <label>Marca</label>
+        <select name="Marca" required>
+         <option value="">Selecione...</option>
+         <option value="Honda">Honda</option>
+         <option value="Chevrolet">Chevrolet</option>
+         <option value="Fiat">Fiat</option>
+         <option value="Ford">Ford</option>
+        </select>
+    <br><br>
+
+        <label>Carroceria</label>
+        <select name="Marca" required>  
+         <option value="">Selecione...</option>
+         <option value="Hatchback">Hatchback</option>
+         <option value="Minivan">Minivan</option>
+         <option value="Perua/SW">Perua/SW</option>
+         <option value="Sedã">Sedã</option>
+         <option value="Utilitário">Utilitário</option>
+        </select>
+        <br><br>
+
+        <label>Cor</label>
+        <select name="Marca" required>
+         <option value="">Selecione...</option>
+         <option value="Branco">Branco</option>
+         <option value="Preto">Preto</option>
+         <option value="Prata">Prata</option>
+        </select>
+        <br><br>
+        
+
+        <label for="campo-texto">Modelo</label>
+        <br>
+        <label for="campo-texto"></label>
+        <textarea id="campo-texto" name="texto"></textarea>
+        <br>
+        <label for="campo-texto">Ano</label>
+        <br>
+        <input type="number" name="Ano" id="">
+        <br>
+        <label for="campo-texto">Quilometragem</label>
+        <br>
+        <input type="number" name="Quilometragem" id="">
+        <br><br>
+
+
+        <label>Avaliação do veículo</label>
+        <br>
+        <label>Estrutura</label><br>  
+        <label for="Sem Detalhes">SD:</label>
+        <input type="checkbox" id="Estrutura" name="Sem Detalhes">
+        <label for="campo-checkbox">PD:</label>
+        <input type="checkbox" id="Estrutura" name="Poucos Detalhes">
+        <label for="campo-checkbox">MD:</label>
+        <input type="checkbox" id="Estrutura" name="Minimos Detalhes">
+        <label for="campo-checkbox">Reprovado:</label>
+        <input type="checkbox" id="Estrutura" name="Reprovado">
+
+        <br>
+
+        <label>Lataria</label><br>  
+        <label for="Sem Detalhes">SD:</label>
+        <input type="checkbox" id="Lataria" name="Sem Detalhes">
+        <label for="campo-checkbox">PD:</label>
+        <input type="checkbox" id="Lataria" name="Poucos Detalhes">
+        <label for="campo-checkbox">MD:</label>
+        <input type="checkbox" id="Lataria" name="Minimos Detalhes">
+        <label for="campo-checkbox">Reprovado:</label>
+        <input type="checkbox" id="Lataria" name="Reprovado">
+
+        <br>
+
+        <label>Interna</label><br>  
+        <label for="Sem Detalhes">SD:</label>
+        <input type="checkbox" id="Interna" name="Sem Detalhes">
+        <label for="campo-checkbox">PD:</label>
+        <input type="checkbox" id="Interna" name="Poucos Detalhes">
+        <label for="campo-checkbox">MD:</label>
+        <input type="checkbox" id="Interna" name="Minimos Detalhes">
+        <label for="campo-checkbox">Reprovado:</label>
+        <input type="checkbox" id="Interna" name="Reprovado">
+
+        <br>
+
+        <label>Instrumentos</label><br>  
+        <label for="Sem Detalhes">SD:</label>
+        <input type="checkbox" id="Instrumentos" name="Sem Detalhes">
+        <label for="campo-checkbox">PD:</label>
+        <input type="checkbox" id="Instrumentos" name="Poucos Detalhes">
+        <label for="campo-checkbox">MD:</label>
+        <input type="checkbox" id="Instrumentos" name="Minimos Detalhes">
+        <label for="campo-checkbox">Reprovado:</label>
+        <input type="checkbox" id="Instrumentos" name="Reprovado">
+        <br>
+
+        <label for="campo-texto">Observação</label>
+        <br>
+        <label for="campo-texto"></label>
+        <textarea id="campo-Observação" name="Observação"></textarea>
+
+        <br><br>
+
+        <label>Pneus</label>
+
+        <select name="Pneus" required>
+              
+         <option value="">Selecione...</option>
+         <option value="100%">100%</option>
+         <option value="80%">80%</option>
+         <option value="60%">60%</option>
+         <option value="50%">50%</option>
+         <option value="40%">40%</option>
+         <option value="trocar">trocar</option>
+        </select>
+    <br><br>
+
+        <input type="submit" value="Salvar">
+        <input type="reset" value="Limpar">
+    </fieldset>
+    </form>
+    <a href="listagem.html">obter a listagem</a>
+</body>
+</html>
